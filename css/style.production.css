@@ -1,0 +1,483 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+Colors used
+
+Background Color (Ghost White): #f8f8ff;
+Primary Color: #357b70;
+Secondary Color: #e0b354;
+Brand Color 0 (dark blue): #03396c
+Brand Color 1 (medium blue): #355c9e;
+Brand Color 2 (light blue): #6497b1
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8ff; font-family: 'Playfair Display', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 */
+}
+
+#title {
+    color: #fff;
+    background-color: #357b70;
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #03396c;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #03396c;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #03396c;
+}
+
+a {
+    color: #03396c;
+}
+
+a:visited {
+    /* visited link */
+    color: #05676e;
+}
+
+a:hover {
+    /* add a blue outline around the link when hovering over a link or when it has focus */
+    outline: 2px #03396c;
+    /* No underlining when hovering over a link or when it has focus */
+    text-decoration: none;
+
+}
+
+a:focus {
+    /* add a blue outline around the link when hovering over a link or when it has focus */
+    outline: 2px #03396c;
+    /* No underlining when hovering over a link or when it has focus */
+    text-decoration: none;
+
+}
+
+a:active {
+    /* selected link */
+    color: #489c79;
+}
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc. of the button */
+    background-color: #357b70;
+    color: #fff;
+    text-decoration: none;
+    /* adds spacing to the button */
+    padding: 10px 20px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc. of the button */
+    background-color: #357b70;
+    color: #fff;
+    text-decoration: none;
+    /* adds spacing to the button */
+    padding: 10px 20px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    border: 2px solid red;
+    /*lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+button:focus {
+    border: 2px solid red;
+    /*lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.button:hover {
+    border: 2px solid red;
+    /*lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.button:focus {
+    border: 2px solid red;
+    /*lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+button:active {
+    background-color: #6497b1
+}
+
+button:focus {
+    border: 2px solid red;
+}
+
+.button_secondary {
+    background-color: #e0b354;
+    color: #2b2b2b
+}
+
+.standard_label {
+    font-size: 18px;
+}
+
+.navigation-list {
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.navigation-list__item {
+    font-size: 24px;
+}
+
+.profile_portrait {
+    float: left;
+    width: 250px ;
+    margin-right: 40px;
+    height: auto ;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.experience {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: 1fr;
+            flex-direction: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #000;
+    background-color: #c6e5f5;
+}
+
+.page-header {
+    /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontaly */
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #355c9e;
+    background-color: #fff;
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px
+}
+
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+/* Border X get width */
+/* div.borderXwidth a:before, .borderXwidth a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #03396c;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:before {
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, .borderXwidth a:hover:after {
+    opacity: 1;
+    width: 100%;
+} */
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+.grid {
+    display: -ms-grid;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; fr actions are better than pixels - they are responsive */
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+}
+
+.grid__item {
+    background-color: #c6e5f5;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 25px;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease; /* Add a smooth transition for the transform property */
+}
+
+.grid__item:last-child {
+    /* grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+}
+
+/* define the hover effect */
+.grid__item:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); /* Increase the size by 5% on hover */
+    cursor: pointer; /* Change the cursor to a pointing hand */;
+}
+}
+
+/* long form */
+/* .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+} */
+
+/* short form */
+.sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+}
+
+/* long form */
+/* .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+} */
+
+/* short form */
+.cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+    to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+    to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+}
+
+@-webkit-keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+    }
+    to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+    }
+    to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+
+/* @keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+    to {
+        fill: #f76414;
+    }
+} */
+
+@-webkit-keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+    50% {
+        fill: #fcffad;
+    }
+    100% {
+        fill: #f76414;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+    50% {
+        fill: #fcffad;
+    }
+    100% {
+        fill: #f76414;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .navigation-list__item {
+        font-size: 18px;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width: 750px){
+    /* shared code */
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
