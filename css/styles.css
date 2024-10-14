@@ -378,3 +378,10 @@ div.borderXwidth a:hover:before, .borderXwidth a:hover:after {
         font-size: 22px;
     }
 }
+
+.centered-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; Full viewport height
+}
